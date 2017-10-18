@@ -1,0 +1,142 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+/* Notes:
+
+Color Scheme: https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.49333333333333335,0.07551833139943595,0.18029216999473202,1,0.7262529738043638,0.794899447975489,0.9933333333333333,0.15205718079075617,0.3630207206650685,1,0.30265925265908,0.47752867230567275,0.7933333333333333,0.121441641034228,0.2899293003969338&swatchOrder=0,1,2,3,4
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: 'Raleway', arial, sans-serif;
+}
+html, body{
+    background-color: #FF4D7A;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Bitter', Palatino, serif;
+    font-weight: normal;
+    text-align:center;
+    padding: 1rem 2rem;
+    text-shadow: 1px 2px 5px #7E132E;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Bitter', Palatino, serif;
+    border-bottom: 0.8rem solid #FF4D7A;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.28rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFB9CB;
+    color: #7E132E;
+    text-shadow: 0 0 0.2rem #fff;
+    box-shadow: 0 0 2rem #CA1F4A;
+}
+header{
+    border-bottom: 0.8rem solid #FFB9CB;
+    background-color: #CA1F4A;
+    color: #FFB9CB;
+}
+.menu-h{
+    width: 100%;
+    text-align:center;
+}
+    .menu-h li{
+        /* style the list items to remove the bullets */
+        list-style-type:none;
+        /* and line up horizontally */
+        float:left;
+        /* and take up 20% of the width of the ul
+        Notes:
+        Since it is asking me to take up to 20% of the ul, I am using the following. However, this is not best practice because it does not adapt well to different screen sizes (float and percentages, unless you are using media queries). */
+        width:20%;
+    }
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            text-decoration: none;
+            color: #FFB9CB;
+            font-family: 'Bitter', Palatino, serif;
+            text-shadow:none;
+            background: #FF4D7A;
+            border-top:.3rem solid #FFB9CB;
+            border-bottom:.3rem solid #FFB9CB;
+            /* style the anchors to fill the entire width of the li */
+            display:block;
+            /* make sure there is padding around your text */
+            padding: 1rem;
+        }
+        .menu-h a:hover,
+        .menu-h a:active{
+            border-top:.3rem solid #7E132E;
+            border-bottom:.3rem solid #7E132E;
+            color: #7E132E;
+            transition: border-top 1s, border-bottom 1s, color 1s;
+        }
+.menu-v{
+    width: 20%;
+    float:left;
+    border-top: 0.8rem solid #FFB9CB;
+}
+    .menu-v li{
+        border-bottom: .5rem solid #CA1F4A;
+        /* style the list items to remove the bullets */
+        list-style-type:none;
+        /* and line up vertically 
+        Notes: 
+        It already is
+        */
+        /* and take up 100% of the width of the ul */
+        width: 100%;
+    }
+    .menu-v li:last-child {
+        border:none;
+    }
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            background-color: #FD275D;
+            text-decoration: none;
+            color: #7E132E;
+            font-family: 'Bitter', Palatino, serif;
+            text-shadow:none;
+            padding: 1rem;
+            /* style the anchors to fill the entire width of the li */
+            display:block;
+        }
+        .menu-v a:hover,
+        .menu-v a:active{
+            background:#FF4D7A;
+            transition: background 1s;
+        }
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
