@@ -9,6 +9,8 @@ Add the hover/active effects to your menu items
 Color Scheme: https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.49333333333333335,0.07551833139943595,0.18029216999473202,1,0.7262529738043638,0.794899447975489,0.9933333333333333,0.15205718079075617,0.3630207206650685,1,0.30265925265908,0.47752867230567275,0.7933333333333333,0.121441641034228,0.2899293003969338&swatchOrder=0,1,2,3,4
 */
 
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 *{
     padding: 0;
